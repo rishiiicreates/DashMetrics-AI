@@ -3,8 +3,5 @@
 # Install dependencies
 npm install
 
-# Build frontend
+# Build the application
 npm run build
-
-# Make the script executable
-chmod +x vercel-build.sh
