@@ -1,68 +1,58 @@
-# DashMetrics AI
+# DashMetrics-AI
 
-A comprehensive SaaS analytics platform designed to streamline social media management through intelligent insights and advanced collaboration tools.
+A modern SAAS analytics dashboard with AI-powered insights for social media performance and competitor analysis.
 
-![DashMetrics AI Screenshot](https://raw.githubusercontent.com/rishiiicreates/DashMetrics-AI/main/screenshot.png)
+## Features
 
-## Overview
+- Interactive dashboard with customizable layouts
+- AI-powered analytics and insights
+- Competitor analysis tools
+- Content performance tracking
+- User authentication and account management
+- Responsive design for all devices
 
-DashMetrics AI combines powerful analytics with artificial intelligence to help content creators and social media managers make data-driven decisions. The platform features a unique Nomadic Tribe-inspired interface with crystal elements, natural motifs, and a soothing color palette.
+## Tech Stack
 
-## Key Features
+- **Frontend**: React, TailwindCSS, Shadcn UI components
+- **Backend**: Express.js
+- **Authentication**: Firebase Authentication
+- **AI Integration**: OpenAI API
+- **Data Visualization**: Recharts
+- **State Management**: React Context API
+- **Queries**: TanStack Query
 
-- **Multi-platform Social Media Integration**: Connect and manage multiple social accounts in one place
-- **AI-Powered Analytics**: Get intelligent insights about your content performance
-- **Advanced Data Visualization**: View your metrics through interactive charts and heatmaps
-- **Competitor Analysis**: Track and analyze competitor performance
-- **Content Calendar**: Schedule and manage your content pipeline
-- **Natural Language Search**: Ask questions about your analytics in plain English
+## Environment Variables
 
-## Technologies
+The following environment variables are required:
 
-- React.js frontend with Typescript
-- Express.js backend
-- Firebase authentication
-- OpenAI integration for intelligent analytics
-- Advanced data visualization
-- Responsive crystal-inspired UI design
+```
+VITE_FIREBASE_API_KEY=your_firebase_api_key
+VITE_FIREBASE_APP_ID=your_firebase_app_id
+VITE_FIREBASE_PROJECT_ID=your_firebase_project_id
+OPENAI_API_KEY=your_openai_api_key
+```
 
-## UI Design
-
-The application features a unique Nomadic Tribe aesthetic with:
-- Crystal-inspired card and button elements
-- Soft color palette (blues, purples, pinks)
-- Nature-inspired visual elements
-- Subtle animations and visual effects
-
-## Getting Started
+## Development
 
 1. Clone the repository
-2. Install dependencies with `npm install`
-3. Set up your Firebase project and add the required environment variables
-4. Run the development server with `npm run dev`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
+4. Open [http://localhost:5000](http://localhost:5000) in your browser
 
-## GitHub Repository Setup
+## Deployment
 
-This project is hosted on GitHub at [https://github.com/rishiiicreates/DashMetrics-AI.git](https://github.com/rishiiicreates/DashMetrics-AI.git)
+This project can be deployed to Vercel or Render:
 
-To push your local code to GitHub:
+### Vercel
+1. Connect your GitHub repository
+2. Configure the environment variables
+3. Deploy
 
-```bash
-# Initialize a git repository if not done already
-git init
-
-# Add all files to staging
-git add .
-
-# Commit your changes
-git commit -m "Initial commit: DashMetrics AI platform"
-
-# Add the remote GitHub repository
-git remote add origin https://github.com/rishiiicreates/DashMetrics-AI.git
-
-# Push your code to GitHub
-git push -u origin main
-```
+### Render
+1. Connect your GitHub repository
+2. Use the provided `render.yaml` configuration
+3. Configure the environment variables
+4. Deploy
 
 ## License
 
