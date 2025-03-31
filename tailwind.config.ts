@@ -24,6 +24,8 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          light: "#8a8be0", // Light blue-purple
+          dark: "#4b4ca8"   // Dark blue-purple
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -44,12 +46,22 @@ export default {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+        nomadic: {
+          blue: "#5152c0",       // Darker blue-purple for better visibility
+          darkblue: "#1e2e48",   // Darker blue for better contrast
+          purple: "#7c5999",     // Darker purple for better visibility
+          pink: "#f6ced8",       // Soft pink from backgrounds
+          cream: "#f5f1e9",      // Cream background color
+          crystal: "#8ebbd8",    // Darker crystal blue for better visibility
+          leaf: "#5a8f73",       // Darker green for better visibility
+          night: "#1a2840"       // Even darker blue night color for better contrast
+        },
         chart: {
-          "1": "hsl(var(--chart-1))",
-          "2": "hsl(var(--chart-2))",
-          "3": "hsl(var(--chart-3))",
-          "4": "hsl(var(--chart-4))",
-          "5": "hsl(var(--chart-5))",
+          "1": "#5152c0", // Darker blue-purple
+          "2": "#7c5999", // Darker purple
+          "3": "#5a8f73", // Darker green
+          "4": "#8ebbd8", // Darker crystal blue
+          "5": "#e596a7", // Darker pink for better contrast
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
