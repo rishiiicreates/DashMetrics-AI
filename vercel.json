@@ -6,10 +6,12 @@
       "use": "@vercel/node"
     },
     {
-      "src": "client/package.json",
+      "src": "client/index.html",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist"
+        "zeroConfig": true,
+        "buildCommand": "cd .. && npm run build",
+        "outputDirectory": "dist"
       }
     }
   ],
@@ -19,8 +21,11 @@
       "dest": "server/index.ts"
     },
     {
+      "handle": "filesystem"
+    },
+    {
       "src": "/(.*)",
-      "dest": "client/dist/$1"
+      "dest": "/index.html"
     }
   ]
 }
